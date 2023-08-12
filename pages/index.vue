@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="rounded-lg border border-[#00DC82] px-3 py-4">
+  <div class="flex justify-between flex-col md:flex-row lg:flex-row gap-x-4">
+    <div class="w-full h-full flex-1 rounded-lg border border-[#00DC82] px-3 py-4">
       <div>
         <label
           for="message"
@@ -25,15 +25,15 @@
         </button>
       </div>
     </div>
-    <div class="rounded-lg border border-blue-600 px-3 py-4 mt-6">
+    <div class="w-full h-full flex-1 rounded-lg border border-blue-600 px-3 py-4 mt-6 md:mt-0">
       <label
         for="message"
         class="block mb-2 text-lg font-medium text-gray-900 dark:text-white"
         >Response</label
       >
-      <pre class="py-4"><code language="javascript">{{ response }}</code></pre>
+      <pre class="min-h-[190px]"><code language="javascript">{{ response }}</code></pre>
 
-      <div class="flex gap-x-4">
+      <div class="flex flex-col md:flex-row justify-around gap-4 mt-5">
         <button
           type="button"
           class="text-white block bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-12 py-2.5 dark:bg-gray-600 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
