@@ -59,7 +59,7 @@ import "highlight.js/scss/stackoverflow-light.scss";
 export default defineNuxtComponent({
   name: "HomePage",
   setup() {
-    const link = ref("Test content");
+    const link = ref("");
     const $hljs = useNuxtApp().$hljs;
     const response = ref({
       data: {},
